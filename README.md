@@ -144,9 +144,13 @@ Intercepting a Google Assistant command works by continuously checking the texts
 
   ### Notes on Google Assistant interception
 
-  Please note that intercepting and capturing a command from the Google Assistant visual interface does not prevent Google Assistant from also processing it.
+  - Please note that intercepting and capturing a command from the Google Assistant visual interface does not prevent Google Assistant from also processing it.
 
-  For example, if you say a command like "_Hey Google, turn down volume_" the command will be intercepted and dispatched, but the Google Assistant will ALSO turn down the volume in your device.
+    For example, if you say a command like "_Hey Google, turn down volume_" the command will be intercepted and dispatched, but the Google Assistant will ALSO turn down the volume in your device.
+
+  - Only voice commands said to Google Assistant in the device where [Tasker] is running will be captured. Google Home or other assistant gadgets are not supported.
+
+  - As the voice command is captured when displayed on screen, the device should be unlocked for the capture to work. If you want the capturing to be permanently available, you should prevent device locking using a feature like "do not lock while charging" or "do not lock while at home" in your device.
 
 # Important notes
 
