@@ -84,9 +84,9 @@ The next command sources can be intercepted:
 
 ## Tasker voice command
 
-Interactively input a voice command and dispatch it.
+You can explicitly input a voice command and dispatch it.
 
-No profile is involved. Create a shortcut to the **VCC - Capture - Voice** task in your device desktop.
+No profile is involved. Just create a shortcut to the **VCC - Capture - Voice** task in your device desktop.
 
 Every time you run this task, [Tasker] will ask you for a voice command to dispatch.
 
