@@ -8,7 +8,7 @@
 
 [VCC] is an Android [Tasker] project that allows to capture voice commands and dispatch them to other tasks to be processed. This includes the ability to intercept voice assistant commands.
 
-For example, using this project you can capture into [Tasker] any commands you say to Google Assistant, even commands that contain parameters, without having to define Google Assistant routines, without the need to specify the "_run in Tasker_" integration, and without the AutoVoice plugin.
+For example, using this project you can capture into [Tasker] any commands you say to Google Assistant, even commands that contain parameters, without having to define Google Assistant routines, without the need to specify the "_run in Tasker_" integration, and without using the AutoVoice plugin.
 
 - [Requirements](#requrements)
 - [Installation and setup](#installation-and-setup)
@@ -78,11 +78,15 @@ If you need clarification on topics like how to set a variable, manage task para
 
 # Command sources
 
+Intercepting one command source or another is optional. You can set up which ones to intercept using the project profiles.
+
 The next command sources can be intercepted:
 
 ## Tasker voice command
 
-Create a shortcut to the **VCC - Capture - Voice** task in your device desktop.
+Interactively input a voice command and dispatch it.
+
+No profile is involved. Create a shortcut to the **VCC - Capture - Voice** task in your device desktop.
 
 Every time you run this task, [Tasker] will ask you for a voice command to dispatch.
 
