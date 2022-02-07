@@ -1,4 +1,4 @@
-![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-blue)
+![Version: 1.0.1](https://img.shields.io/badge/Version-1.0.1-blue)
 ![Android: 5.0+](https://img.shields.io/badge/Android-5.0%2B-blue)
 [![Tasker for Android: 5.9.3+](https://img.shields.io/badge/Tasker%20for%20Android-5.9.3%2B-blue)][Tasker]
 [![License: GPL 3](https://img.shields.io/badge/License-GPL%203-green)](LICENSE)
@@ -16,7 +16,8 @@ For example, using this project you can capture into [Tasker] any commands you s
 - [Command sources](#command-sources)
   - [Tasker voice command](#tasker-voice-command)
   - [Assistant Action command](#assistant-action-command)
-  - [Autovoice command](#autovoice-command)
+  - [AutoVoice command](#autovoice-command)
+  - [AutoWear command](#autowear-command)
   - [Google Assistant command](#google-assistant-command)
     - [Additional setup and configuration](#additional-setup-and-configuration)
     - [Notes on Google Assistant interception](#notes-on-google-assistant-interception)
@@ -30,6 +31,7 @@ For example, using this project you can capture into [Tasker] any commands you s
 - [AutoInput] plugin for [Tasker].
 - [Tasker] 5.11.14 or newer, if you want to capture [Assistant Action commands](#assistant-action-command).
 - [AutoVoice] plugin for [Tasker], if you want to capture [AutoVoice commands](#autovoice-command).
+- [AutoWear] plugin for [Tasker], if you want to capture [AutoWear commands](#autowear-command).
 
 # Installation and setup
 
@@ -98,13 +100,19 @@ You can then capture and dispatch voice commands by saying:
 
 "_Hey Google, run \<YOUR-COMMAND-HERE\> in Tasker_"
 
-## Autovoice command
+## AutoVoice command
 
 Enable the **VCC - Intercept - AutoVoice** profile.
 
 You can then capture and dispatch voice commands by saying:
 
 "_Hey Google, ask AutoVoice to \<YOUR-COMMAND-HERE\>_"
+
+## AutoWear command
+
+Enable the **VCC - Intercept - AutoWear** profile.
+
+You can then capture and dispatch commands sent from your wearable device to [Tasker] using [AutoWear].
 
 ## Google Assistant command
 
@@ -178,6 +186,7 @@ Intercepting a Google Assistant command works by continuously checking the texts
 [Tasker]: https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm
 [AutoInput]: https://play.google.com/store/apps/details?id=com.joaomgcd.autoinput
 [AutoVoice]: https://play.google.com/store/apps/details?id=com.joaomgcd.autovoice
+[AutoWear]: https://play.google.com/store/apps/details?id=com.joaomgcd.autowear
 [AutoNotification]: https://play.google.com/store/apps/details?id=com.joaomgcd.autonotification
 
 [vcc project]: https://taskernet.com/shares/?user=AS35m8nuYECCRZX6Z3dLemrH8t2K4h9Dkn9B%2Fr8F9Ydfsp0xZ%2BgRGC87lUwDzJgqI09t65c%3D&id=Project%3AVoice+Command+Capture

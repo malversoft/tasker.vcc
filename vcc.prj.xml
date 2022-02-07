@@ -2,7 +2,7 @@
 	<Profile sr="prof21" ve="2">
 		<cdate>1630289951163</cdate>
 		<clp>true</clp>
-		<edate>1644179547996</edate>
+		<edate>1644253592679</edate>
 		<flags>8</flags>
 		<id>21</id>
 		<mid0>22</mid0>
@@ -141,12 +141,59 @@ Notification Text: timed out|no active window (regex) (case ins)</com.twofortyfo
 			<Int sr="arg3" val="1"/>
 		</Event>
 	</Profile>
+	<Profile sr="prof51" ve="2">
+		<cdate>1644247099664</cdate>
+		<clp>true</clp>
+		<edate>1644249346113</edate>
+		<flags>8</flags>
+		<id>51</id>
+		<limit>true</limit>
+		<mid0>55</mid0>
+		<nme>VCC - Intercept - AutoWear</nme>
+		<Event sr="con0" ve="2">
+			<code>1861978578</code>
+			<pri>0</pri>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<Command>.+</Command>
+					<Command-type>java.lang.String</Command-type>
+					<CommandCaseInsensitive>false</CommandCaseInsensitive>
+					<CommandCaseInsensitive-type>java.lang.Boolean</CommandCaseInsensitive-type>
+					<CommandExact>false</CommandExact>
+					<CommandExact-type>java.lang.Boolean</CommandExact-type>
+					<CommandRegex>true</CommandRegex>
+					<CommandRegex-type>java.lang.Boolean</CommandRegex-type>
+					<Event>&lt;null&gt;</Event>
+					<Event-type>java.lang.String</Event-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Command Filter: .+
+Regex: true</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED>true</net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED>
+					<net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED-type>java.lang.Boolean</net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED-type>
+					<net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT>0</net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT>
+					<net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT-type>java.lang.Integer</net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>Command plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<plugininstanceid>3a7c4adf-ee6f-4f67-ba07-1ae8b71dff43</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autowear.intent.IntentCommand</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autowear</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autowear.activity.ActivityConfigCommand</Str>
+			<Int sr="arg3" val="1"/>
+		</Event>
+	</Profile>
 	<Profile sr="prof52" ve="2">
 		<cdate>1629675486563</cdate>
 		<clp>true</clp>
-		<edate>1644179556149</edate>
+		<edate>1644249254135</edate>
 		<flags>8</flags>
 		<id>52</id>
+		<limit>true</limit>
 		<mid0>53</mid0>
 		<nme>VCC - Intercept - Assistant Action</nme>
 		<Event sr="con0" ve="2">
@@ -155,20 +202,21 @@ Notification Text: timed out|no active window (regex) (case ins)</com.twofortyfo
 			<Bundle sr="arg0">
 				<Vals sr="val">
 					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%aa_command
-El comando completo
-El comando completo enviado por el asistente.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+The full command
+The full command sent from the assistant&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
 					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
 				</Vals>
 			</Bundle>
-			<Str sr="arg1" ve="3"/>
+			<Str sr="arg1" ve="3">*</Str>
 		</Event>
 	</Profile>
 	<Profile sr="prof54" ve="2">
 		<cdate>1629680809833</cdate>
 		<clp>true</clp>
-		<edate>1644179565374</edate>
+		<edate>1644253591880</edate>
 		<flags>8</flags>
 		<id>54</id>
+		<limit>true</limit>
 		<mid0>56</mid0>
 		<nme>VCC - Intercept - AutoVoice</nme>
 		<Event sr="con0" ve="2">
@@ -226,16 +274,6 @@ El comando completo enviado por el asistente.&lt;/_array_net.dinglisch.android.t
 					<configregexsub-type>java.lang.Boolean</configregexsub-type>
 					<net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED>true</net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED>
 					<net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED-type>java.lang.Boolean</net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED-type>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%avcomm
-First recognized Command
-&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%avcomms()
-All recognized commands
-&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%avsource
-Source of the Voice Command
-Can be normal, continuous, test or googlenow&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%avword()
-Word Array
-&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
 					<net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT>0</net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT>
 					<net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT-type>java.lang.Integer</net.dinglisch.android.tasker.extras.REQUESTED_TIMEOUT-type>
 					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
@@ -256,8 +294,17 @@ Word Array
 	<Project sr="proj0" ve="2">
 		<cdate>1630015017172</cdate>
 		<name>Voice Command Capture</name>
-		<pids>54,21,52,25</pids>
-		<tids>93,20,12,109,108,29,30,56,22,53,79</tids>
+		<pids>52,25,21,51,54</pids>
+		<tids>12,53,79,20,109,108,29,55,93,56,22,30</tids>
+		<Share sr="Share">
+			<b>false</b>
+			<d>&lt;p&gt;&lt;b&gt;Voice Command Capture&lt;/b&gt; version 1.0.1.&lt;/p&gt;
+
+&lt;p&gt;Please read the &lt;b&gt;project documentation&lt;/b&gt; in &lt;b&gt;https://github.com/malversoft/tasker.vcc&lt;/b&gt; before proceeding.&lt;/p&gt;</d>
+			<g>Assistant,AutoInput,AutoVoice</g>
+			<p>true</p>
+			<t></t>
+		</Share>
 		<Img sr="icon" ve="2">
 			<nme>mw_action_record_voice_over</nme>
 		</Img>
@@ -688,7 +735,7 @@ Can also be accessed as an array&lt;/_array_net.dinglisch.android.tasker.RELEVAN
 	</Task>
 	<Task sr="task12">
 		<cdate>1642375068530</cdate>
-		<edate>1644188875641</edate>
+		<edate>1644247727017</edate>
 		<id>12</id>
 		<nme>VCC - Dispatch command</nme>
 		<pri>100</pri>
@@ -836,7 +883,7 @@ Can also be accessed as an array&lt;/_array_net.dinglisch.android.tasker.RELEVAN
 	</Task>
 	<Task sr="task20">
 		<cdate>1629144282744</cdate>
-		<edate>1644188935158</edate>
+		<edate>1644249352528</edate>
 		<id>20</id>
 		<nme>VCC - Config - Dispatcher</nme>
 		<pri>100</pri>
@@ -1261,7 +1308,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task29">
 		<cdate>1629641950221</cdate>
-		<edate>1644179683537</edate>
+		<edate>1644195467598</edate>
 		<id>29</id>
 		<nme>VCC - Aux - Cancel notification</nme>
 		<pri>6</pri>
@@ -1350,7 +1397,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task30">
 		<cdate>1642377524627</cdate>
-		<edate>1644189302559</edate>
+		<edate>1644255735119</edate>
 		<id>30</id>
 		<nme>VCC - Capture - Voice</nme>
 		<pri>100</pri>
@@ -1469,10 +1516,10 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task53">
 		<cdate>1629678263112</cdate>
-		<edate>1644185355443</edate>
+		<edate>1644247128639</edate>
 		<id>53</id>
 		<nme>VCC - Capture - Assistant Action</nme>
-		<pri>100</pri>
+		<pri>6</pri>
 		<Action sr="act0" ve="7">
 			<code>130</code>
 			<Str sr="arg0" ve="3">VCC - Dispatch command</Str>
@@ -1516,12 +1563,61 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<nme>mw_av_play_circle_outline</nme>
 		</Img>
 	</Task>
+	<Task sr="task55">
+		<cdate>1629678263112</cdate>
+		<edate>1644249278242</edate>
+		<id>55</id>
+		<nme>VCC - Capture - AutoWear</nme>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">VCC - Dispatch command</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3">%awmessage</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">%recognized_command</Str>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">VCC - Close Google Assistant</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%recognized_command</lhs>
+					<op>0</op>
+					<rhs>1</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>mw_av_play_circle_outline</nme>
+		</Img>
+	</Task>
 	<Task sr="task56">
 		<cdate>1629678263112</cdate>
-		<edate>1644179629411</edate>
+		<edate>1644249823711</edate>
 		<id>56</id>
 		<nme>VCC - Capture - AutoVoice</nme>
-		<pri>100</pri>
+		<pri>6</pri>
 		<Action sr="act0" ve="7">
 			<code>130</code>
 			<Str sr="arg0" ve="3">VCC - Dispatch command</Str>
