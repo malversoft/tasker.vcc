@@ -30,13 +30,13 @@ For example, using this project you can selectively capture into [Tasker] any co
 
 # Installation and setup
 
-1. Import the project ```vcc``` into Tasker.
+1. Import the project **vcc** into Tasker.
 2. [Configure](#configuration) the dispatcher tasks.
 3. Enable/disable the project profiles, depending on the [command sources](#command-sources) you want to intercept.
 
 # Configuration
 
-Configuration variables can be set in the task ```VCC - Config - Dispatcher```.
+Configuration variables can be set in the task **VCC - Config - Dispatcher**.
 
 - ```%cfg_dispatch_task```
 
@@ -68,13 +68,13 @@ The next command sources can be intercepted:
 
 ## Tasker voice command
 
-Create a shortcut to the ```VCC - Capture - Voice``` task in your device desktop.
+Create a shortcut to the **VCC - Capture - Voice** task in your device desktop.
 
 Every time you run this task, [Tasker] will ask you for a voice command to dispatch.
 
 ## Assistant Action command
 
-Enable the ```VCC - Intercept - Assistant Action``` profile.
+Enable the **VCC - Intercept - Assistant Action** profile.
 
 You can then capture and dispatch voice commands by saying:
 
@@ -82,7 +82,7 @@ You can then capture and dispatch voice commands by saying:
 
 ## Autovoice command
 
-Enable the ```VCC - Intercept - AutoVoice``` profile.
+Enable the **VCC - Intercept - AutoVoice** profile.
 
 You can then capture and dispatch voice commands by saying:
 
@@ -90,7 +90,7 @@ You can then capture and dispatch voice commands by saying:
 
 ## Google Assistant command
 
-Enable the ```VCC - Intercept - Google Assistant``` profile.
+Enable the **VCC - Intercept - Google Assistant** profile.
 
 You can then capture and dispatch voice commands by saying:
 
@@ -100,13 +100,13 @@ You can then capture and dispatch voice commands by saying:
 
 Intercepting a Google Assistant command works by continuously checking the texts displayed in the Google Assistant window while it is opened. But these texts are localized in your system´s language, so to achieve this some additional setup and configuration is required.
 
-- Import into Tasker the additional project ```vcc_locale```.
+- Import into Tasker the additional project **vcc_locale**.
 
   This additional project defines the text patterns used by [VCC] to recognize when the Google Assistant is opened and when it does or does not contain any command to capture.
 
   A task is defined for every supported language. If your language is not supported yet, you should create a task specific for your language (use the ones in other idioms as a guide). You can then send it to the project developer to make the list of supported languages grow.
 
-- Configuration variables can be set in the task ```VCC - Config - Google Assistant```.
+- Configuration variables can be set in the task **VCC - Config - Google Assistant**.
 
   - ```%cfg_locale_force```
 
@@ -124,21 +124,21 @@ Intercepting a Google Assistant command works by continuously checking the texts
 
 - [AutoInput] requires to be enabled as an Android accesibility service to be able to check for texts shown in Google Assistant.
 
-  You can enable it by opening [AutoInput] and pressing the "```Accesibility```" option.
+  You can enable it by opening [AutoInput] and pressing the "**Accesibility**" option.
 
   Beware that some Android flavors eventually disable some accessibility services for no clear reason.
 
 - When used by [VCC], [AutoInput] shows error notifications in the Android notifications bar when it detects that Google Assistant has been closed (something that is necessary). To get rid of those unwanted notifications you have two options:
 
-  - Disable [AutoInput] error notifications. To achieve this open [AutoInput], and under "```Logs```" configuration deactivate the option "```Action Error Notifications```".
+  - Disable [AutoInput] error notifications. To achieve this open [AutoInput], and under "**Logs**" configuration deactivate the option "**Action Error Notifications**".
 
-  - Acivate the ```VCC - Aux - AutoInput error``` profile in [Tasker]. This will require that you have the [AutoNotification] plugin for [Tasker] installed.
+  - Acivate the **VCC - Aux - AutoInput error** profile in [Tasker]. This will require that you have the [AutoNotification] plugin for [Tasker] installed.
 
-- The system language detection may be imprecise if you have more than one locale language installed in your Android device. If you find that the texts in your language are defined but [VCC] is not using them, try to force the language locale used by [VCC] using the configuration variables set in the ```VCC - Config - Google Assistant``` task.
+- The system language detection may be imprecise if you have more than one locale language installed in your Android device. If you find that the texts in your language are defined but [VCC] is not using them, try to force the language locale used by [VCC] using the configuration variables set in the **VCC - Config - Google Assistant** task.
 
 - If [VCC] stops capturing commands, check that your Android battery saver is not killing any of the programs required for [VCC] to work. That includes [Tasker] and all plugins involved in the process.
 
-- In configuration variables and task names, locales are specified following the [ISO 639-1](https://wikipedia.org/wiki/ISO_639-1) standard. For example, "```en```" stands for any engilsh variant, "```en-US```" for the USA english variant, "```es```" stands for any spanish variant, "```es-ES```" for the Spain spanish variant, and so on.
+- In configuration variables and task names, locales are specified following the [ISO 639-1](https://wikipedia.org/wiki/ISO_639-1) standard. For example, "**en**" stands for any engilsh variant, "**en-US**" for the USA english variant, "**es**" stands for any spanish variant, "**es-ES**" for the Spain spanish variant, and so on.
 
 
 [VCC]: ./README.md#top
