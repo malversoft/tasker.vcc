@@ -1,5 +1,5 @@
 [![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-blue)][VCC]
-[![Android: 5.0+](https://img.shields.io/badge/Android-5.0%2B-blue)][Tasker]
+[![Android: 5.0+](https://img.shields.io/badge/Android-5.0%2B-blue)]
 [![Tasker for Android: 5.9.3+](https://img.shields.io/badge/Tasker%20for%20Android-5.9.3%2B-blue)][Tasker]
 [![License: GPL 3](https://img.shields.io/badge/License-GPL%203-green)](LICENSE)
 
